@@ -4,6 +4,45 @@ A production-oriented Hugo website deployed on **Cloudflare Workers**, built aut
 
 The project combines Hugo's static-site generation with Cloudflare's global edge network, while keeping the source code and content in GitHub.
 
+## Languages
+
+The website is designed as a multilingual platform with six languages:
+
+| Language | Code | Direction |
+|---|---|---|
+| 🇬🇧 English | `en` | LTR |
+| 🇫🇷 Français | `fr` | LTR |
+| 🇨🇳 中文 | `zh` | LTR |
+| 🇷🇺 Русский | `ru` | LTR |
+| 🇸🇦 العربية | `ar` | RTL |
+| 🇮🇷 فارسی | `fa` | RTL |
+
+English is the default language. Arabic and Persian use right-to-left (RTL) layout support.
+
+Translated pages are linked with Hugo's `translationKey` system, allowing each language version of a post to be treated as a translation of the same content.
+
+Example structure:
+
+```text
+content/
+├── posts/
+│   └── welcome-to-bmxbike.md
+├── fr/posts/
+│   └── welcome-to-bmxbike.md
+├── zh/posts/
+│   └── welcome-to-bmxbike.md
+├── ru/posts/
+│   └── welcome-to-bmxbike.md
+├── ar/posts/
+│   └── welcome-to-bmxbike.md
+└── fa/posts/
+    └── welcome-to-bmxbike.md
+```
+
+This multilingual foundation is intended to scale as the number of articles, pages, categories, and translations grows.
+
+---
+
 ## Architecture
 
 ```text
@@ -245,6 +284,17 @@ The Go module is:
 github.com/Shahzad55/hugo-cloudflare
 ```
 
+The Hugo configuration supports:
+
+- English
+- French
+- Chinese
+- Russian
+- Arabic
+- Persian
+
+The RTL languages are configured with right-to-left document direction.
+
 The Hugo build also enables production-oriented features such as:
 
 - Robots.txt generation
@@ -289,13 +339,33 @@ This keeps the deployment pipeline easy to understand and maintain.
 
 # Current Content Structure
 
-Hugo content is organized under:
+Hugo content is organized into language-specific sections.
 
 ```text
 content/
 ├── _index.md
-└── posts/
-    └── welcome-to-bmxbike.md
+├── posts/
+│   └── welcome-to-bmxbike.md
+├── fr/
+│   ├── _index.md
+│   └── posts/
+│       └── welcome-to-bmxbike.md
+├── zh/
+│   ├── _index.md
+│   └── posts/
+│       └── welcome-to-bmxbike.md
+├── ru/
+│   ├── _index.md
+│   └── posts/
+│       └── welcome-to-bmxbike.md
+├── ar/
+│   ├── _index.md
+│   └── posts/
+│       └── welcome-to-bmxbike.md
+└── fa/
+    ├── _index.md
+    └── posts/
+        └── welcome-to-bmxbike.md
 ```
 
 The first published post is:
@@ -314,7 +384,12 @@ The important project files are organized approximately as follows:
 .
 ├── content/
 │   ├── _index.md
-│   └── posts/
+│   ├── posts/
+│   ├── fr/
+│   ├── zh/
+│   ├── ru/
+│   ├── ar/
+│   └── fa/
 ├── static/
 │   └── admin/
 │       └── index.html
@@ -379,6 +454,10 @@ Previous commits provide a clear history for investigating or reverting changes.
 
 The local development machine is not part of the production serving path.
 
+### Multilingual Growth
+
+The language structure is established from the beginning, allowing additional translated content to grow without redesigning the content architecture.
+
 ### Simplicity
 
 There is no traditional VPS, Nginx installation, PHP runtime, or manually maintained web server required for the Hugo website.
@@ -407,6 +486,7 @@ Planned areas include:
 - Performance monitoring
 - Advanced caching
 - Backup and recovery strategy
+- Expanded multilingual content
 
 The Admin system will eventually provide a friendly interface while GitHub and Hugo remain central to the publishing architecture where appropriate.
 
@@ -448,7 +528,7 @@ Visitors
 
 The goal is not simply to make the website work.
 
-The goal is to build a foundation that can grow from a small Hugo website into a large content platform without replacing the core architecture.
+The goal is to build a foundation that can grow from a small Hugo website into a large multilingual content platform without replacing the core architecture.
 
 ---
 
