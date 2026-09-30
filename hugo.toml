@@ -1,17 +1,61 @@
 baseURL = 'https://hugo-cloudflare.sh-h.workers.dev/'
-languageCode = 'en-us'
-title = 'Hugo Cloudflare'
-
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+title = 'BMxBike'
 
 enableRobotsTXT = true
 enableGitInfo = true
 
+[languages]
+
+  [languages.en]
+    languageName = 'English'
+    languageCode = 'en-us'
+    weight = 1
+    title = 'BMxBike'
+
+    [languages.en.params]
+      description = 'BMxBike — a fast, modern multilingual website powered by Hugo and Cloudflare.'
+
+  [languages.fr]
+    languageName = 'Français'
+    languageCode = 'fr-fr'
+    weight = 2
+    title = 'BMxBike'
+
+  [languages.zh]
+    languageName = '中文'
+    languageCode = 'zh-cn'
+    weight = 3
+    title = 'BMxBike'
+
+  [languages.ru]
+    languageName = 'Русский'
+    languageCode = 'ru-ru'
+    weight = 4
+    title = 'BMxBike'
+
+  [languages.ar]
+    languageName = 'العربية'
+    languageCode = 'ar'
+    weight = 5
+    title = 'BMxBike'
+    direction = 'rtl'
+
+  [languages.fa]
+    languageName = 'فارسی'
+    languageCode = 'fa-ir'
+    weight = 6
+    title = 'BMxBike'
+    direction = 'rtl'
+
 [params]
   env = 'production'
-  title = 'Hugo Cloudflare'
-  description = 'A fast, modern Hugo website running on Cloudflare Workers.'
+  title = 'BMxBike'
+  description = 'BMxBike — a fast, modern multilingual website powered by Hugo and Cloudflare.'
   defaultTheme = 'auto'
   disableThemeToggle = false
+  ShowLanguageSwitcher = true
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -22,20 +66,23 @@ enableGitInfo = true
   UseHugoToc = true
 
   [params.homeInfoParams]
-    Title = 'Welcome to Hugo Cloudflare'
-    Content = 'A modern Hugo website powered by Cloudflare.'
+    Title = 'Welcome to BMxBike'
+    Content = 'A modern multilingual website powered by Hugo and Cloudflare.'
 
 [menu]
+
   [[menu.main]]
     identifier = 'posts'
     name = 'Posts'
     url = '/posts/'
     weight = 10
+
   [[menu.main]]
     identifier = 'archives'
     name = 'Archives'
     url = '/archives/'
     weight = 20
+
   [[menu.main]]
     identifier = 'search'
     name = 'Search'
