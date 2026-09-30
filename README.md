@@ -2,6 +2,19 @@
 
 A production-oriented Hugo website deployed on **Cloudflare Workers**, built automatically from **GitHub**, with a lightweight architecture designed to scale as the website grows.
 
+## README Languages
+
+Read this README in your preferred language:
+
+1. 🇬🇧 [English](README.md)
+2. 🇫🇷 [Français](README.fr.md)
+3. 🇨🇳 [中文](README.zh.md)
+4. 🇷🇺 [Русский](README.ru.md)
+5. 🇸🇦 [العربية](README.ar.md)
+6. 🇮🇷 [فارسی](README.fa.md)
+
+---
+
 The project combines Hugo's static-site generation with Cloudflare's global edge network, while keeping the source code and content in GitHub.
 
 ## Languages
@@ -537,3 +550,4 @@ The goal is to build a foundation that can grow from a small Hugo website into a
 This repository is currently maintained by **Shahzad55**.
 
 See the repository configuration for the current license and contribution policy.
+
