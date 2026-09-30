@@ -1,7 +1,56 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://hugo-cloudflare.sh-h.workers.dev/'
+languageCode = 'en-us'
+title = 'Hugo Cloudflare'
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+theme = ['PaperMod']
+
+enableRobotsTXT = true
+enableGitInfo = true
+
+[params]
+  env = 'production'
+  title = 'Hugo Cloudflare'
+  description = 'A fast, modern Hugo website running on Cloudflare Workers.'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+  [params.homeInfoParams]
+    Title = 'Welcome to Hugo Cloudflare'
+    Content = 'A modern Hugo website powered by Cloudflare.'
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'Archives'
+    url = '/archives/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'search'
+    name = 'Search'
+    url = '/search/'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[module]
+  [[module.imports]]
+    path = 'github.com/adityatelange/hugo-PaperMod'
+    version = 'd3768854d00ad003b0a8dbdba254ce9224377a01'
