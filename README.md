@@ -12,6 +12,7 @@ Read this README in your preferred language:
 4. 🇷🇺 [Русский](README.ru.md)
 5. 🇸🇦 [العربية](README.ar.md)
 6. 🇮🇷 [فارسی](README.fa.md)
+7. 🇪🇸 [Español](README.es.md)
 
 ---
 
