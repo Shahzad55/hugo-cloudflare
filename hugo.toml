@@ -1,4 +1,4 @@
-baseURL = 'https://hugo-cloudflare.sh-h.workers.dev/'
+baseURL = 'https://bmxbike.ir/'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 title = 'BMxBike'
