@@ -42,6 +42,12 @@ enableGitInfo = true
     title = 'BMxBike'
     direction = 'rtl'
 
+  [languages.es]
+    languageName = 'Español'
+    languageCode = 'es-es'
+    weight = 7
+    title = 'BMxBike'
+
   [languages.fa]
     languageName = 'فارسی'
     languageCode = 'fa-ir'
