@@ -1,9 +1,16 @@
 {
   "name": "hugo-cloudflare",
   "compatibility_date": "2026-09-09",
+
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page"
-  }
-}
+  },
 
+  "kv_namespaces": [
+    {
+      "binding": "SITE_KV",
+      "id": "3b22efc867474dd78e1a325b210c3197"
+    }
+  ]
+}
