@@ -20,7 +20,7 @@ The project combines Hugo's static-site generation with Cloudflare's global edge
 
 ## Languages
 
-The website is designed as a multilingual platform with six languages:
+The website is designed as a multilingual platform with seven languages:
 
 | Language | Code | Direction |
 |---|---|---|
@@ -30,6 +30,7 @@ The website is designed as a multilingual platform with six languages:
 | 🇷🇺 Русский | `ru` | LTR |
 | 🇸🇦 العربية | `ar` | RTL |
 | 🇮🇷 فارسی | `fa` | RTL |
+| 🇪🇸 Español | `es` | LTR |
 
 English is the default language. Arabic and Persian use right-to-left (RTL) layout support.
 
