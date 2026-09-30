@@ -6,18 +6,11 @@
     "directory": "./public",
     "not_found_handling": "404-page"
   },
-<<<<<<< HEAD
 
-=======
->>>>>>> ed8db7e (Add SITE_KV binding)
   "kv_namespaces": [
     {
       "binding": "SITE_KV",
       "id": "3b22efc867474dd78e1a325b210c3197"
     }
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ed8db7e (Add SITE_KV binding)
