@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BMX Bike — Admin</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e5e7eb;background:#0b1020}
+*{box-sizing:border-box}body{margin:0;display:flex;min-height:100vh}
+aside{width:250px;background:#111827;border-right:1px solid #263244;padding:24px 16px}
+.brand{font-size:20px;font-weight:800;margin:0 8px 28px}.brand span{color:#60a5fa}
+nav a{display:block;padding:11px 12px;margin:4px 0;border-radius:9px;color:#cbd5e1;text-decoration:none}nav a.active,nav a:hover{background:#1e293b;color:#fff}
+main{flex:1;padding:32px;max-width:1400px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+h1{margin:0;font-size:28px}.muted{color:#94a3b8}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{background:#111827;border:1px solid #263244;border-radius:14px;padding:20px}.num{font-size:30px;font-weight:800;margin-top:8px}
+.panel{margin-top:20px}.panel h2{font-size:18px;margin-top:0}
+button{border:0;border-radius:9px;padding:10px 15px;background:#2563eb;color:#fff;font-weight:600;cursor:pointer}button:hover{background:#1d4ed8}
+@media(max-width:800px){aside{width:190px}.grid{grid-template-columns:repeat(2,1fr)}main{padding:20px}}
+@media(max-width:560px){body{display:block}aside{width:100%;border-right:0;border-bottom:1px solid #263244}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<aside>
+  <div class="brand">BMX <span>BIKE</span></div>
+  <nav>
+    <a class="active" href="/">Dashboard</a>
+    <a href="#">Posts</a>
+    <a href="#">Pages</a>
+    <a href="#">Categories</a>
+    <a href="#">Media</a>
+    <a href="#">Settings</a>
+  </nav>
+</aside>
+<main>
+  <div class="top">
+    <div><h1>Dashboard</h1><div class="muted">BMX Bike administration</div></div>
+    <button>New Post</button>
+  </div>
+  <section class="grid">
+    <div class="card"><div class="muted">Posts</div><div class="num">0</div></div>
+    <div class="card"><div class="muted">Pages</div><div class="num">0</div></div>
+    <div class="card"><div class="muted">Categories</div><div class="num">0</div></div>
+    <div class="card"><div class="muted">Media</div><div class="num">0</div></div>
+  </section>
+  <section class="card panel">
+    <h2>Administration panel</h2>
+    <p class="muted">The admin application is connected to the same Cloudflare Worker as the public Hugo site.</p>
+  </section>
+</main>
+</body>
+</html>
