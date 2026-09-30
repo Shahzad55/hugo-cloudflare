@@ -1,11 +1,9 @@
-﻿{
+{
   "name": "hugo-cloudflare",
   "compatibility_date": "2026-09-09",
-  "build": {
-    "command": "chmod a+x build.sh && ./build.sh"
-  },
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page"
   }
 }
+
