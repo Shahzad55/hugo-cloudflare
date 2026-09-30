@@ -2,7 +2,6 @@ baseURL = 'https://hugo-cloudflare.sh-h.workers.dev/'
 languageCode = 'en-us'
 title = 'Hugo Cloudflare'
 
-theme = ['PaperMod']
 
 enableRobotsTXT = true
 enableGitInfo = true
