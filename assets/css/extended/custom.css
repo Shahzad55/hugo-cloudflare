@@ -1,0 +1,4 @@
+/* Replace PaperMod's default attribution with the custom footer text. */
+.footer > span:last-child {
+  display: none;
+}
