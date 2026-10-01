@@ -68,14 +68,15 @@ enableGitInfo = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowWordCount = true
-  [params.footer]
-    text = 'Powered by **[Hugo](https://gohugo.io/)** & **[PaperMod](https://github.com/adityatelange/hugo-PaperMod/)** · Fully hosted on **[Cloudflare](https://www.cloudflare.com/)**'
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
 
   [params.homeInfoParams]
     Title = 'Welcome to BMxBike'
     Content = 'A modern multilingual website powered by Hugo and Cloudflare.'
+
+[params.footer]
+  text = 'Powered by **[Hugo](https://gohugo.io/)** & **[PaperMod](https://github.com/adityatelange/hugo-PaperMod/)** · Fully hosted on **[Cloudflare](https://www.cloudflare.com/)**'
 
 [menu]
 
